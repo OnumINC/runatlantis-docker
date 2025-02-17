@@ -6,7 +6,6 @@ ENV PIPX_HOME=/opt/pipx
 ENV PIPX_BIN_DIR=/usr/local/bin
 RUN apk add aws-cli cdrkit libxslt pipx gcc musl-dev python3-dev libffi-dev openssl-dev cargo make
 RUN pipx install azure-cli
-RUN pipx environment
 
 FROM ghcr.io/runatlantis/atlantis:${ATLANTIS_VERSION} AS final
 USER root
