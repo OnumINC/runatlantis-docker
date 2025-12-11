@@ -1,4 +1,4 @@
-ARG ATLANTIS_VERSION=v0.31.0
+ARG ATLANTIS_VERSION=v0.38.0
 
 FROM ghcr.io/runatlantis/atlantis:${ATLANTIS_VERSION} AS builder
 USER root
